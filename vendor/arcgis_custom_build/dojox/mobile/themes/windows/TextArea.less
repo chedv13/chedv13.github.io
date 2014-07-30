@@ -1,0 +1,12 @@
+@import "variables";
+@import "../common/TextArea";
+
+.mblTextArea {
+    &:active, &:focus {
+      .mblTextInputFocused-styles;
+    }
+
+    &[disabled] {
+      .mblTextInputDisabled-styles
+    }
+}

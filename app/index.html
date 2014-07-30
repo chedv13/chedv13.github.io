@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>Sample page</title>
+
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap-3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../vendor/arcgis_custom_build/dijit/themes/tundra/tundra.css"/>
+    <link rel="stylesheet" type="text/css" href="../vendor/arcgis_custom_build/esri/css/esri.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+</head>
+<body>
+<div id="main" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design:'headline'">
+    <div id="header" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <button data-dojo-type="dijit/form/Button">Point</button>
+                        </li>
+                        <li>
+                            <button data-dojo-type="dijit/form/Button">Multi Point</button>
+                        </li>
+                        <li>
+                            <button data-dojo-type="dijit/form/Button">Line</button>
+                        </li>
+                        <li>
+                            <button data-dojo-type="dijit/form/Button">Polyline</button>
+                        </li>
+                        <li>
+                            <button data-dojo-type="dijit/form/Button">Polygon</button>
+                        </li>
+                        <li>
+                            <button data-dojo-type="dijit/form/Button">Freehand Polyline</button>
+                        </li>
+                        <li>
+                            <button data-dojo-type="dijit/form/Button">Freehand Polygon</button>
+                        </li>
+                        <li>
+                            <button data-dojo-type="dijit/form/Button">Arrow</button>
+                        </li>
+                        <li>
+                            <button data-dojo-type="dijit/form/Button">Triangle</button>
+                        </li>
+                        <li>
+                            <button data-dojo-type="dijit/form/Button">Circle</button>
+                        </li>
+                        <li>
+                            <button data-dojo-type="dijit/form/Button">Ellipse</button>
+                        </li>
+                        <li>
+                            <a id="download-tiles">Download tiles</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="map"
+         data-dojo-type="dijit/layout/ContentPane"
+         data-dojo-props="region:'center'"></div>
+</div>
+
+<script src="../vendor/jquery-1.11.1.min.js"></script>
+<script src="../vendor/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script src="../vendor/pouchdb-2.2.3.min.js"></script>
+<script src="../vendor/arcgis_custom_build/dojo/dojo.js" data-dojo-config="async: true"></script>
+<script src="../vendor/underscore-min.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

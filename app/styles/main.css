@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.dj_ie .infowindow .window .top .right .user .content {
+    position: relative;
+}
+
+.dj_ie .simpleInfoWindow .content {
+    position: relative;
+}
+
+.dijitButton {
+    margin: 0;
+}
+
+.dijitButtonNode {
+    border: none;
+    padding: 11px;
+}
+
+.dijitButtonContents {
+    padding: 5px;
+}
+
+#download-tiles {
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+}
+
+#header {
+    position: absolute;
+    z-index: 40;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
